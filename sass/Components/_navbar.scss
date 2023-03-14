@@ -23,7 +23,7 @@
                             bottom: -3px;
                             background-color: $orange-1;
                             visibility: hidden;
-                            transition: all 0.3s ease-in-out;
+                            transition: ease-in-out 0.3s;
                         }
 
                         &:hover::before, &.active::before {
