@@ -30,6 +30,7 @@ body {
 }
 .home .container .home__text {
   font-size: 24px;
+  font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
   margin-top: 20px;
 }
