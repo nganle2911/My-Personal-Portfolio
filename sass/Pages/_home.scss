@@ -1,0 +1,51 @@
+.home {
+    height: $height-1;
+    .container {
+        .row {
+            .home__left {
+                padding: $padding-1 0;
+                .home__name {
+                    font-size: $fs-1;
+                    font-weight: $fw-5;
+                    a {
+                        text-decoration: none;
+                        color: $gold-1;
+                    }
+                }
+                .home__text {
+                    font-size: $fs-2;
+                    color: $gold-2;
+                    span {
+                        color: $gold-1;
+                        border-bottom: 2px solid $gold-1;
+                    }
+                }
+                nav {}
+                .home__socialMedia {
+                    margin-top: $margin-3;
+                    display: flex;
+                    a {
+                        margin-right: $margin-4;
+                        font-size: $fs-3;
+                        font-weight: $fw-1;
+                        text-align: center;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        background-color: $white-2;
+                        border-radius: 50%;
+                        color: $turquoise-1;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            background-color: $turquoise-1;
+                            color: $gold-1;
+                            font-weight: $fw-4;
+                        }
+                    }
+                }
+            }
+            .home__right {}
+        }
+    }
+}
