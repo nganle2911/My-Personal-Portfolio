@@ -1,5 +1,6 @@
 .home {
     height: $height-1;
+    overflow: hidden;
     .container {
         .row {
             .home__left {
@@ -45,7 +46,16 @@
                     }
                 }
             }
-            .home__right {}
+            .home__right {
+                padding: 0;
+                position: relative;
+                img {
+                    width: 80%;
+                    position: absolute;
+                    right: 0;
+                    top: 150px;
+                }
+            }
         }
     }
 }
