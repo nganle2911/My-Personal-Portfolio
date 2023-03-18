@@ -58,10 +58,7 @@
                 justify-content: right;
                 img {
                     width: 80%;
-                }
-
-                &:hover {
-                    @include animation(rotateImage, 3s, linear, 1);
+                    @include animation(moveImage, 5s, infinite);
                 }
             }
         }
