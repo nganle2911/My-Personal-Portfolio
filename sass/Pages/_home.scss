@@ -35,11 +35,11 @@
                         color: $white-1;
                         margin-right: $margin-4;
                         display: inline-block;
-                        width: 40px;
-                        height: 40px;
+                        width: $num-1;
+                        height: $num-1;
                         background-color: $white-2;
                         border-radius: 50%;
-                        line-height: 40px;
+                        line-height: $num-1;
                         text-align: center;
                         transition: all 0.3s ease-in-out;
 
@@ -58,6 +58,10 @@
                 justify-content: right;
                 img {
                     width: 80%;
+                }
+
+                &:hover {
+                    @include animation(rotateImage, 3s, linear, 1);
                 }
             }
         }
