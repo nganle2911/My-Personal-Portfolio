@@ -53,23 +53,33 @@ body {
   font-weight: 700;
 }
 
-.about .container .navbar {
+.navMenu {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+}
+.navMenu .container .navbar {
   background-color: #0A1828;
 }
-.about .container .navbar .container-fluid {
+.navMenu .container .navbar .container-fluid {
   padding: 0;
 }
-.about .container .navbar .container-fluid .navbar-brand {
+.navMenu .container .navbar .container-fluid .navbar-brand {
   font-size: 36px;
   font-weight: 600;
   color: #deb992;
 }
-.about .container .navbar .container-fluid .navbar-collapse {
+.navMenu .container .navbar .container-fluid .navbar-collapse {
   position: relative;
 }
-.about .container .navbar .container-fluid .navbar-collapse .nav {
+.navMenu .container .navbar .container-fluid .navbar-collapse .nav {
   position: absolute;
   right: 0;
+}
+
+.about {
+  margin-top: 100px;
 }
 .about .container .aboutMe {
   padding: 30px;

@@ -1,30 +1,6 @@
 .about {
+    margin-top: $margin-8;
     .container {
-        .navbar {
-            background-color: $dark-1;
-
-            .container-fluid {
-                padding: 0;
-
-                .navbar-brand {
-                    font-size: $fs-5;
-                    font-weight: $fw-3;
-                    color: $gold-1;
-                }
-
-                .navbar-toggler {}
-
-                .navbar-collapse {
-                    position: relative;
-
-                    .nav {
-                        position: absolute;
-                        right: 0;
-                    }
-                }
-
-            }
-        }
 
         // About Me
         .aboutMe {
