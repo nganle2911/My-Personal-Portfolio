@@ -20,9 +20,6 @@ body {
     transform: rotate(3deg) translate(3px, 3px);
   }
 }
-.nav {
-  margin-top: 35px;
-}
 .nav .nav-item {
   position: relative;
   margin-right: 30px;
@@ -75,6 +72,7 @@ body {
 }
 .home .container .row .home__left .home__text {
   margin-top: 20px;
+  margin-bottom: 40px;
   font-size: 24px;
   color: rgba(222, 185, 146, 0.65);
 }
@@ -113,4 +111,73 @@ body {
 .home .container .row .home__right img {
   width: 80%;
   animation: moveImage 5s infinite;
+}
+
+.about .container .navbar {
+  background-color: #0A1828;
+}
+.about .container .navbar .container-fluid {
+  padding: 0;
+}
+.about .container .navbar .container-fluid .navbar-brand {
+  font-size: 36px;
+  font-weight: 600;
+  color: #deb992;
+}
+.about .container .navbar .container-fluid .navbar-collapse {
+  position: relative;
+}
+.about .container .navbar .container-fluid .navbar-collapse .nav {
+  position: absolute;
+  right: 0;
+}
+.about .container .aboutMe {
+  padding: 30px;
+  background-color: #081521;
+}
+.about .container .aboutMe .aboutMe__title h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: #deb992;
+  position: relative;
+}
+.about .container .aboutMe .aboutMe__title h2::before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #deb992;
+  top: 7px;
+  left: 65px;
+}
+.about .container .aboutMe .aboutMe__title p {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 600;
+  color: #deb992;
+  margin-top: -10px;
+}
+.about .container .aboutMe .aboutMe__info .row .info__photo img {
+  height: auto;
+  max-width: 100%;
+}
+.about .container .aboutMe .aboutMe__info .row .info__content {
+  color: #869ba9;
+}
+.about .container .aboutMe .aboutMe__info .row .info__content .info__title {
+  color: #178582;
+  font-weight: 600;
+}
+.about .container .aboutMe .aboutMe__info .row .info__content .info__perso ul li {
+  list-style: none;
+}
+.about .container .aboutMe .aboutMe__info .row .info__content .info__perso ul li i {
+  color: #178582;
+  margin-right: 5px;
+}
+.about .container .aboutMe .aboutMe__info .row .info__content .info__perso ul li strong {
+  margin-right: 10px;
 }

@@ -1,0 +1,96 @@
+// ABOUT 
+.about {
+    .container {
+        .navbar {
+            background-color: $dark-1;
+
+            .container-fluid {
+                padding: 0;
+                .navbar-brand {
+                    font-size: $fs-5;
+                    font-weight: $fw-3;
+                    color: $gold-1;
+                }
+
+                .navbar-toggler {}
+
+                .navbar-collapse {
+                    position: relative;
+                    .nav {
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+
+            }
+        }
+
+        // About Me
+        .aboutMe {
+            padding: $padding-2;
+            background-color: $dark-3;
+            .aboutMe__title {
+                h2 {
+                    font-size: $fs-6;
+                    text-transform: uppercase;
+                    font-weight: $fw-2;
+                    margin-bottom: $margin-6;
+                    letter-spacing: 2px;
+                    color: $gold-1;
+                    position: relative;
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        width: $num-2;
+                        height: 1px;
+                        background-color: $gold-1;
+                        top: 7px;
+                        left: 65px;
+                    }
+                }
+                p {
+                    text-transform: uppercase;
+                    font-size: $fs-5;
+                    font-weight: $fw-3;
+                    color: $gold-1;
+                    margin-top: -10px;
+                }
+            }
+            .aboutMe__info {
+                .row {
+                    .info__photo {
+                        img {
+                            height: auto;
+                            max-width: 100%;
+                        }
+                    }
+                    .info__content {
+                        color: $white-1;
+                        .info__title {
+                            color: $turquoise-1;
+                            font-weight: $fw-3;
+                        }
+                        .info__text {}
+                        .info__perso {
+                            ul {
+                                li {
+                                    list-style: none;
+                                    i {
+                                        color: $turquoise-1;
+                                        margin-right: $margin-6 - 5;
+                                    }
+                                    strong {
+                                        margin-right: $margin-6;
+                                    }
+                                    span {}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
