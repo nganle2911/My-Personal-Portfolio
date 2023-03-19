@@ -1,5 +1,4 @@
 .about {
-    margin-top: $margin-8;
     .container {
 
         // About Me
@@ -12,11 +11,7 @@
                 }
 
                 p {
-                    text-transform: uppercase;
-                    font-size: $fs-5;
-                    font-weight: $fw-3;
-                    color: $gold-1;
-                    margin-top: $margin-7;
+                    @include text;
                 }
             }
 

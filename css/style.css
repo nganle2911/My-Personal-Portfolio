@@ -9,6 +9,10 @@ body {
   background-color: #0A1828;
 }
 
+section.section-show {
+  padding-top: 100px;
+}
+
 @keyframes moveImage {
   0% {
     transform: rotate(3deg) translate(3px, 3px);
@@ -78,9 +82,6 @@ body {
   right: 0;
 }
 
-.about {
-  margin-top: 100px;
-}
 .about .container .aboutMe {
   padding: 30px;
   background-color: #081521;
@@ -227,6 +228,81 @@ body {
   font-size: 16px;
   font-weight: 700;
   color: #869ba9;
+}
+
+.resume .container .myResume {
+  padding: 30px;
+  background-color: #081521;
+}
+.resume .container .myResume .myResume__title h2.title {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: rgba(222, 185, 146, 0.65);
+  position: relative;
+}
+.resume .container .myResume .myResume__title h2.title::before {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 1px;
+  background-color: #178582;
+  top: 7px;
+  left: 75px;
+}
+.resume .container .myResume .myResume__title p.text {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 600;
+  color: #deb992;
+  margin-top: -15px;
+}
+.resume .container .myResume .myResume__info .row h3.topic {
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 20px 0;
+  color: #deb992;
+}
+.resume .container .myResume .myResume__info .row .myResume__item {
+  padding-left: 20px;
+  border-left: 2px solid rgba(23, 133, 129, 0.196);
+  position: relative;
+}
+.resume .container .myResume .myResume__info .row .myResume__item::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #178582;
+  position: absolute;
+  left: -8px;
+  top: 0;
+}
+.resume .container .myResume .myResume__info .row .myResume__item .item__title {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #178582;
+}
+.resume .container .myResume .myResume__info .row .myResume__item .item__year {
+  font-size: 16px;
+  background-color: rgba(134, 155, 169, 0.3);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: rgba(204, 243, 238, 0.718);
+}
+.resume .container .myResume .myResume__info .row .myResume__item .item__text {
+  color: #869ba9;
+}
+.resume .container .myResume .myResume__info .row .myResume__item .item__list li {
+  color: #869ba9;
+  padding-bottom: 10px;
 }
 
 .home {
