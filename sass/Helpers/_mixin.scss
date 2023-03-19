@@ -4,7 +4,7 @@
 }
 
 // h2.title
-@mixin title {
+@mixin title ($left) {
     font-size: $fs-6;
     text-transform: uppercase;
     font-weight: $fw-2;
@@ -16,16 +16,16 @@
     &::before {
         position: absolute;
         content: "";
-        width: $num-2;
+        width: $num-5;
         height: 1px;
         background-color: $turquoise-1;
         top: 7px;
-        left: 65px;
+        left: $left;
     }
 }
 
 // background 
-@mixin backround {
+@mixin background {
     padding: $padding-2;
     background-color: $dark-3;
 }
