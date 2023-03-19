@@ -135,21 +135,21 @@ body {
   padding: 30px;
   background-color: #081521;
 }
-.about .container .aboutMe .aboutMe__title h2 {
+.about .container .aboutMe .aboutMe__title h2.title {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 10px;
   letter-spacing: 2px;
-  color: #deb992;
+  color: rgba(222, 185, 146, 0.65);
   position: relative;
 }
-.about .container .aboutMe .aboutMe__title h2::before {
+.about .container .aboutMe .aboutMe__title h2.title::before {
   position: absolute;
   content: "";
   width: 100px;
   height: 1px;
-  background-color: #deb992;
+  background-color: #7DB9B6;
   top: 7px;
   left: 65px;
 }

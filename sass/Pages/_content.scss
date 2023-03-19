@@ -30,24 +30,8 @@
             padding: $padding-2;
             background-color: $dark-3;
             .aboutMe__title {
-                h2 {
-                    font-size: $fs-6;
-                    text-transform: uppercase;
-                    font-weight: $fw-2;
-                    margin-bottom: $margin-6;
-                    letter-spacing: 2px;
-                    color: $gold-1;
-                    position: relative;
-
-                    &::before {
-                        position: absolute;
-                        content: "";
-                        width: $num-2;
-                        height: 1px;
-                        background-color: $gold-1;
-                        top: 7px;
-                        left: 65px;
-                    }
+                h2.title {
+                    @include title;
                 }
                 p {
                     text-transform: uppercase;
