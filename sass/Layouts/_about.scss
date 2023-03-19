@@ -2,73 +2,91 @@
     .container {
         .navbar {
             background-color: $dark-1;
-    
+
             .container-fluid {
                 padding: 0;
+
                 .navbar-brand {
                     font-size: $fs-5;
                     font-weight: $fw-3;
                     color: $gold-1;
                 }
-    
+
                 .navbar-toggler {}
-    
+
                 .navbar-collapse {
                     position: relative;
+
                     .nav {
                         position: absolute;
                         right: 0;
                     }
                 }
-    
+
             }
         }
+
         // About Me
         .aboutMe {
-            @include backround; 
+            @include backround;
+
             .aboutMe__title {
                 h2.title {
                     @include title;
                 }
+
                 p {
                     text-transform: uppercase;
                     font-size: $fs-5;
                     font-weight: $fw-3;
                     color: $gold-1;
-                    margin-top: -10px;
+                    margin-top: $margin-7;
                 }
             }
+
             .aboutMe__info {
                 .row {
                     .info__photo {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
                         img {
                             height: auto;
-                            max-width: 100%;
+                            max-width: 80%;
                         }
                     }
+
                     .info__content {
                         color: $white-1;
+
                         .info__title {
                             color: $turquoise-1;
                             font-weight: $fw-3;
                         }
+
                         .info__text {}
+
                         .info__perso {
                             ul {
                                 li {
                                     list-style: none;
                                     margin-bottom: $margin-6;
+
                                     i {
                                         color: $turquoise-1;
                                         margin-right: $margin-6 - 5;
                                     }
+
                                     strong {
                                         margin-right: $margin-6;
                                     }
+
                                     span {}
                                 }
                             }
                         }
+
                         .info__present {}
                     }
                 }
@@ -78,9 +96,38 @@
         // Skills 
         .skills {
             @include backround;
+
             .skills__title {
                 h2.title {
                     @include title;
+                }
+            }
+
+            .skills__content {
+                .row {
+                    .skills__info {
+                        margin-bottom: $margin-6;
+                        .skills__name {
+                            display: flex;
+                            justify-content: space-between;
+                            p {
+                                color: $gold-1;
+                                font-weight: $fw-2;
+                                font-size: $fs-6;
+                                text-transform: uppercase;
+                                padding: $padding-3 0;
+                                margin: 0;
+                            }
+                        }
+                        .progress {
+                            height: $num-3;
+                            background-color: $white-2;
+                            .progress-bar {
+                                background-color: $turquoise-1;
+                                // width: 85%;
+                            }
+                        }
+                    }
                 }
             }
         }
