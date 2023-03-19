@@ -23,3 +23,9 @@
         left: 65px;
     }
 }
+
+// background 
+@mixin backround {
+    padding: $padding-2;
+    background-color: $dark-3;
+}
