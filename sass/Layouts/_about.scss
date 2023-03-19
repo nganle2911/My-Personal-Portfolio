@@ -107,9 +107,11 @@
                 .row {
                     .skills__info {
                         margin-bottom: $margin-6;
+
                         .skills__name {
                             display: flex;
                             justify-content: space-between;
+
                             p {
                                 color: $gold-1;
                                 font-weight: $fw-2;
@@ -119,9 +121,11 @@
                                 margin: 0;
                             }
                         }
+
                         .progress {
                             height: $num-3;
                             background-color: $white-2;
+
                             .progress-bar {
                                 background-color: $turquoise-1;
                                 // width: 85%;
@@ -143,17 +147,18 @@
             }
 
             .interest__content {
-                .row {
-                    .interest__item {
-                        background-color: $white-3;
-                        padding: 0;
-                        margin: $margin-6;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                gap: $num-6;
 
-                        .item__box {
-                            padding: $padding-5;
-                            i {}
-                            span {}
-                        }
+                .interest__item {
+                    .item__box {
+                        padding: $padding-5;
+                        background-color: $white-2;
+
+                        i {}
+
+                        span {}
                     }
                 }
             }

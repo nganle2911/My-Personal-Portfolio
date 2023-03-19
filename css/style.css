@@ -193,13 +193,14 @@ body {
   top: 7px;
   left: 100px;
 }
-.about .container .interest .interest__content .row .interest__item {
-  background-color: rgba(134, 155, 169, 0.708);
-  padding: 0;
-  margin: 10px;
+.about .container .interest .interest__content {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 15px;
 }
-.about .container .interest .interest__content .row .interest__item .item__box {
+.about .container .interest .interest__content .interest__item .item__box {
   padding: 20px;
+  background-color: rgba(134, 155, 169, 0.3);
 }
 .home {
   height: 100vh;
