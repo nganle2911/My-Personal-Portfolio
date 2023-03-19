@@ -200,8 +200,25 @@ body {
 }
 .about .container .interest .interest__content .interest__item .item__box {
   padding: 20px;
+  background-color: rgba(134, 155, 169, 0.082);
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.about .container .interest .interest__content .interest__item .item__box:hover {
+  transform: scale(1.07);
   background-color: rgba(134, 155, 169, 0.3);
 }
+.about .container .interest .interest__content .interest__item .item__box i {
+  font-size: 32px;
+  padding-right: 10px;
+}
+.about .container .interest .interest__content .interest__item .item__box span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #869ba9;
+}
+
 .home {
   height: 100vh;
   display: flex;
