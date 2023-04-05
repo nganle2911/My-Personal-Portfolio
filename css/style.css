@@ -24,39 +24,10 @@ section.section-show {
     transform: rotate(3deg) translate(3px, 3px);
   }
 }
-.nav .nav-item {
-  position: relative;
-  margin-right: 30px;
+@font-face {
+  font-family: "Marck";
+  src: url("../Vendors/Marck_Script/MarckScript-Regular.ttf") format("ttf");
 }
-.nav .nav-item .nav-link {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  color: rgba(23, 133, 129, 0.469);
-  font-size: 16px;
-  font-weight: 500;
-  transition: all 0.3s ease-in-out;
-}
-.nav .nav-item .nav-link::before {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 2px;
-  background-color: #178582;
-  left: 0;
-  bottom: -3px;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
-}
-.nav .nav-item .nav-link:hover::before, .nav .nav-item .nav-link.active::before {
-  visibility: visible;
-  width: 50%;
-}
-.nav .nav-item .nav-link:hover, .nav .nav-item .nav-link.active {
-  color: #178582;
-  font-weight: 700;
-}
-
 .navMenu {
   position: fixed;
   width: 100%;
