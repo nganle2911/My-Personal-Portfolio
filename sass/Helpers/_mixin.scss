@@ -49,30 +49,31 @@
 }
 
 // Responsive 
+
 // Small screen
 @mixin small-screen {
-    @media (max-width: $sm) {
+    @media (max-width: map-get($breakpoints, sm)) {
         @content;
     }
 }
 
 // Medium screen
 @mixin medium-screen {
-    @media (min-width: $md) and (max-width: $lg) {
+    @media (min-width: map-get($breakpoints, sm)) and (max-width: map-get($breakpoints, lg)) {
         @content;
     }
 }
 
 // Large screen
 @mixin large-screen {
-    @media (min-width: $lg) and (max-width: $xl) {
+    @media (min-width: map-get($breakpoints, lg)) and (max-width: map-get($breakpoints, xl)) {
         @content;
     }
 }
 
 // Extra Large screen
 @mixin extra-large-screen {
-    @media (max-width: $xl) {
+    @media (max-width: map-get($breakpoints, xl)) {
         @content;
     }
 }

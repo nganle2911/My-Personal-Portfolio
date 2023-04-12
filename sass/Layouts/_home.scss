@@ -11,6 +11,10 @@
                     font-size: $fs-1;
                     font-weight: $fw-5;
 
+                    @include small-screen {
+                        font-size: $fs-7;
+                    }
+
                     a {
                         text-decoration: none;
                         color: $gold-1;
