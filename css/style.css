@@ -45,6 +45,9 @@ section.section-show {
   font-weight: 600;
   color: #deb992;
 }
+.navMenu .container .navbar .container-fluid .navbar-toggler {
+  background-color: white;
+}
 .navMenu .container .navbar .container-fluid .navbar-collapse {
   position: relative;
 }
