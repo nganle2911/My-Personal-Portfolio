@@ -47,3 +47,32 @@
     margin: $margin-5 0;
     color: $gold-1;
 }
+
+// Responsive 
+// Small screen
+@mixin small-screen {
+    @media (max-width: $sm) {
+        @content;
+    }
+}
+
+// Medium screen
+@mixin medium-screen {
+    @media (min-width: $md) and (max-width: $lg) {
+        @content;
+    }
+}
+
+// Large screen
+@mixin large-screen {
+    @media (min-width: $lg) and (max-width: $xl) {
+        @content;
+    }
+}
+
+// Extra Large screen
+@mixin extra-large-screen {
+    @media (max-width: $xl) {
+        @content;
+    }
+}

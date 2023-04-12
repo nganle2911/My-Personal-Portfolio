@@ -63,3 +63,11 @@ $fw-2: 500;
 $fw-3: 600;
 $fw-4: 700;
 $fw-5: 800;
+
+// breakpoints 
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
